@@ -1,0 +1,2 @@
+$().ready(() => console.log("working"))
+

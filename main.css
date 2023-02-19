@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #000
+}
+
+.break {
+    display: block;
+}
+
+#dev {
+    color: #7093A7;
+}
+
+#landing-page {
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.main {
+    background-color: #DEDFE5;
+    height: 85vh;
+}
+
+.airplaneIcon {
+    height: 250px
+}
+
+.chip {
+    background-color: #292929;
+    padding: 20px !important;
+    width: 60%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.circle {
+    background-color: #7093A7;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-left: -70px;
+    margin-top: 20px;
+}
+
+.jordan {
+    margin-top: -50px;
+    margin-left: 15px;
+    height: 600px
+}
+
+.heading {
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main {
+        background-color: #DEDFE5;
+        position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .jordan {
+        margin-top: -50px;
+        height: 400px;
+        margin-left: -10px
+    }
+
+    .chipText {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .chip {
+        background-color: #292929;
+        padding: 15px !important;
+        width: 100%;
+        cursor: pointer;
+        margin: auto;
+        position: relative;
+        top: 340px
+    }
+
+    .circle {
+        background-color: #7093A7;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-top: -150px;
+        margin-left: 1px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    /* Add styles for screens smaller than 768 pixels (phones) here */
+    #landing-page {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .airplaneIcon {
+        display: none;
+    }
+}
+
+/* Add any styles for medium-sized screens here */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Add styles for screens between 768 and 1024 pixels (tablets) here */
+    #landing-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .airplaneIcon {
+        height: 200px
+    }
+}
+
+/* Add any styles for large screens here */
+@media only screen and (min-width: 1024px) {
+
+    /* Add styles for screens larger than 1024 pixels (desktops) here */
+    #landing-page {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
