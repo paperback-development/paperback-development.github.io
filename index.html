@@ -13,26 +13,63 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/87578baf13.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog" style="border-radius:12px;">
+            <div class="modal-content" style="border-radius: 12px;">
+
+                <div class="modal-body">
+                    <h1 class="mb-5 text-center" style="font-size:30px;"><strong>Paperback</strong> <span
+                            id="dev"><strong>Development</strong></span></h1>
+                    <div
+                        style="background-color:#DEDFE5; height:20px; margin-top:-63px;border-radius: 5px;margin-bottom:15px">
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Quicksand;">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Quicksand;">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label required" style="font-family: Quicksand;">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn " id="closeBtn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn" id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main">
 
         <div id="landing-page" class="container-fluid">
-            <div id="cta" style="margin-top:10%;">
+            <div id="cta" style="margin-top:10%;" data-aos="zoom-in">
                 <h1 class="mb-5" style="font-size:50px"><strong>Paperback</strong> <span
                         id="dev"><strong>Development</strong></span></h1>
-                <p style="font-size:25px; color:#5b5b5b; font-family: Quicksand;" class="mb-5">Bringing ideas to life &
-                    Solving <br class="break" /> problems with
-                    technology</p>
-                <div class="badge rounded-pill mb-5 chip">
+                <p style="font-size:25px; color:#5b5b5b; font-family: Quicksand;" class="mb-5">
+                    Bringing ideas to life &
+                    Solving <br class="break" /> problems with technology</p>
+                <button id="badge" class="badge rounded-pill mb-5 chip" type="button" class="btn btn-primary"
+                    data-bs-toggle="modal" data-bs-target="#myModal">
                     <p class="chipText">Have an idea? Lets Chat.</p>
-                </div>
+                </button>
                 <img class="airplaneIcon" src="./result (1).png" />
             </div>
 
-            <div style="margin-top:10%;">
+            <div style="margin-top:10%;" data-aos="zoom-in">
                 <nav class="navbar navbar-expand-lg ">
                     <div>
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,7 +90,8 @@
                                 <li class="nav-item">
                                     <div class="badge rounded-pill m"
                                         style="background-color:#7093A7; padding: 10px;margin-top: 4px;" href="#"
-                                        tabindex="-1"><strong>Contact Us</strong>
+                                        tabindex="-1" data-bs-toggle="modal" data-bs-target="#myModal"><strong>Contact
+                                            Us</strong>
                                     </div>
                                 </li>
                             </ul>
@@ -66,9 +104,57 @@
             </div>
         </div>
     </div>
+    <div style="height:200px; background-color:#f7f7f7">
+
+    </div>
+    <div id="services" data-aos="zoom-in-up">
+        <div id="serviceImage">
+            <img src="./services.jpg" height="350px" style="border-radius:6px" />
+        </div>
+        <div id="serviceList">
+            <h1 class="mb-5 text-center" style="font-size:30px;"><strong>Services</strong></h1>
+            <div id="highlight"></div>
+            <div id="serviceListItems">
+                <ul>
+                    <li style="margin-bottom:18px">
+                        <i class="fa-solid fa-code" style="margin-top:5px;margin-right:5px;"></i>
+                    </li>
+                    <li style="margin-bottom:18px">
+                        <i class="fa-solid fa-laptop-code" style="margin-top:5px;margin-right:5px"></i>
+                    </li>
+                    <li style="margin-bottom:18px">
+                        <i class="fa-solid fa-mobile-screen" style="margin-top:5px;margin-right:5px; width:20px"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chalkboard-user" style="margin-top:5px;margin-right:5px"></i>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Software Development</p>
+                    </li>
+                    <li>
+                        <p>Web Development</p>
+                    </li>
+                    <li>
+                        <p>Mobile App Development</p>
+                    </li>
+                    <li>
+                        <p>Tutoring & Mentoring</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script defer src="./main.js"></script>
 </body>
 
 </html>

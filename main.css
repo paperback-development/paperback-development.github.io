@@ -7,15 +7,35 @@ li,
 a {
     text-decoration: none;
     list-style: none;
-    color: #000
+    color: #000;
+    font-family: 'Quicksand'
 }
 
 .break {
     display: block;
 }
 
+.modal-dialog {
+    background-color: #DEDFE5;
+}
+
+#submitBtn {
+    background-color: #7093A7;
+    color: white;
+}
+
+#closeBtn {
+    background-color: #292929;
+    color: white;
+}
+
 #dev {
     color: #7093A7;
+    z-index: 9000;
+}
+
+#myModal {
+    border-radius: 12px;
 }
 
 #landing-page {
@@ -41,6 +61,7 @@ a {
     width: 60%;
     font-size: 16px;
     cursor: pointer;
+    border: none
 }
 
 .circle {
@@ -53,7 +74,7 @@ a {
 }
 
 .jordan {
-    margin-top: -50px;
+    margin-top: -78px;
     margin-left: 15px;
     height: 600px
 }
@@ -62,7 +83,61 @@ a {
     font-size: 50px;
 }
 
+.chipText {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#services {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#testimonials {
+    background-color: #f7f7f7;
+    height: 200px
+}
+
+#serviceList {
+    width: 40%;
+}
+
+#highlight {
+    background-color: #7093A7;
+    height: 18px;
+    margin-top: -63px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+#serviceListItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#serviceImage {
+    margin
+}
+
 @media only screen and (max-width: 767px) {
+    #serviceImage {
+        display: none;
+    }
+
+    #serviceListItems {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .main {
         background-color: #DEDFE5;
         position: center;
@@ -77,7 +152,7 @@ a {
     }
 
     .jordan {
-        margin-top: -50px;
+        margin-top: -54px;
         height: 400px;
         margin-left: -10px
     }
@@ -123,6 +198,21 @@ a {
     .airplaneIcon {
         display: none;
     }
+
+    #serviceList {
+        width: 100%;
+    }
+
+    #highlight {
+        background-color: #7093A7;
+        height: 18px;
+        margin-top: -63px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-left: 20px;
+    }
+
 }
 
 /* Add any styles for medium-sized screens here */
@@ -150,5 +240,10 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    #submitBtn {
+        background-color: #7093A7;
+        color: white;
     }
 }
