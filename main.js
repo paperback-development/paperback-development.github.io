@@ -7,6 +7,9 @@ $(document).ready(function () {
         AOS.init();
     }, 120);
 
+    $("#closeBtn").click(() => {
+        $("#clientName").val("")
+    })
 
 });
 

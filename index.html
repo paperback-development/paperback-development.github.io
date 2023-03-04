@@ -33,33 +33,33 @@
                     <div
                         style="background-color:#DEDFE5; height:20px; margin-top:-63px;border-radius: 5px;margin-bottom:15px">
                     </div>
-                    <form>
+                    <form action="https://formspree.io/f/mrgvkrly" method="POST">
                         <div class="mb-3">
                             <label class="form-label required" style="font-family: Quicksand;">Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="name" class="form-control" id="clientName">
                         </div>
                         <div class="mb-3">
                             <label class="form-label required" style="font-family: Quicksand;">Email</label>
-                            <input type="email" class="form-control">
+                            <input type="email" name="email" class="form-control" id="clientEmail">
                         </div>
                         <div class="mb-3">
                             <label class="form-label required" style="font-family: Quicksand;">Message</label>
-                            <textarea class="form-control"></textarea>
+                            <textarea class="form-control" name="message" id="clientMessage"></textarea>
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn " id="closeBtn" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn" id="submitBtn">Submit</button>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
     <div class="main">
 
         <div id="landing-page" class="container-fluid">
-            <div id="cta" style="margin-top:10%;" data-aos="zoom-in">
-                <h1 class="mb-5" style="font-size:50px"><strong>Paperback</strong> <span
+            <div id="cta" style="margin-top:10%;">
+                <h1 class=" mb-5" style="font-size:50px"><strong>Paperback</strong> <span
                         id="dev"><strong>Development</strong></span></h1>
                 <p style="font-size:25px; color:#5b5b5b; font-family: Quicksand;" class="mb-5">
                     Bringing ideas to life &
@@ -71,28 +71,29 @@
                 <img class="airplaneIcon" src="./result (1).png" />
             </div>
 
-            <div style="margin-top:10%;" data-aos="zoom-in">
+            <div style="margin-top:10%;">
                 <nav class="navbar navbar-expand-lg ">
                     <div>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" style="text-decoration: none; color:#000;"
-                                        aria-current="page" href="#"><strong>Projects</strong></a>
+                                        aria-current="page" href="#industries"><strong>Industries</strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" style="text-decoration: none; color:#000;"
-                                        href="#"><strong>About
+                                        href="#about"><strong>About
                                             Us</strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" style="text-decoration: none; color:#000;"
-                                        href="#"><strong>Services</strong></a>
+                                        href="#services"><strong>Services</strong></a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="badge rounded-pill m"
-                                        style="background-color:#7093A7; padding: 10px;margin-top: 4px;" href="#"
-                                        tabindex="-1" data-bs-toggle="modal" data-bs-target="#myModal"><strong>Contact
+                                        style="background-color:#7093A7; padding: 10px;margin-top: 4px; cursor:pointer"
+                                        href="#" tabindex="-1" data-bs-toggle="modal" data-bs-target="#myModal">
+                                        <strong>Contact
                                             Us</strong>
                                     </div>
                                 </li>
@@ -106,15 +107,33 @@
             </div>
         </div>
     </div>
-    <div style="height:200px; background-color:#f7f7f7">
+    <div id="about">
 
+        <div id="serviceList">
+            <h1 class="mb-5 text-center" style="font-size:30px;"><strong>About us</strong></h1>
+            <div id="highlight"></div>
+            <p style="font-family: quicksand;">
+                At Paperback Development, we are skilled designers and software
+                developers that
+                are dedicated to delivering innovative and
+                customized solutions that meet the unique needs of our clients.</p>
+            <p style="font-family: quicksand;">
+                We are passionate about what we do, and we strive to exceed our clients'
+                expectations with every project we undertake. Whether you're looking to develop a new software
+                application, streamline your business processes, or enhance your existing systems, we are here to help.
+                Contact us today to learn more about how we can help you achieve your goals with technology.
+            </p>
+        </div>
+        <div id="serviceImage" data-aos="fade-left">
+            <img src="./idea.jpg" height="350px" style="border-radius:6px" />
+        </div>
     </div>
-    <div id="services" data-aos="zoom-in-up">
-        <div id="serviceImage">
+    <div id="services">
+        <div id="serviceImage" data-aos="fade-right">
             <img src="./services.jpg" height="350px" style="border-radius:6px" />
         </div>
         <div id="serviceList">
-            <h1 class="mb-5 text-center" style="font-size:30px;"><strong>Services</strong></h1>
+            <h1 class="mb-5 text-center" style="font-size:30px; z-index:1000"><strong>Services</strong></h1>
             <div id="highlight"></div>
             <div id="serviceListItems">
                 <ul>
@@ -143,20 +162,50 @@
                         <p>Web Development</p>
                     </li>
                     <li>
-                        <p>Mobile App Development</p>
+                        <p>Mobile Development</p>
                     </li>
                     <li>
-                        <p>Design (Mobile, Web, Logo)</p>
+                        <p>UI/UX | Company Logo Design</p>
                     </li>
                     <li>
-                        <p>Tutoring & Mentoring</p>
+                        <p>Lessons & Mentoring</p>
                     </li>
                 </ul>
             </div>
         </div>
 
     </div>
+    <div id="industries">
+        <h1 class="mb-5 text-center" style="font-size:30px"><strong>Industries</strong></h1>
+        <div id="highlight2"></div>
+        <div id="imgcontainer" class="container">
+            <div class="row">
+                <div id="education" class="col me-3" data-aos="fade-in">
+                    <h2 style="line-height: 200px; font-weight: bolder;">Education</h2>
+                </div>
+                <div id="finance" class="col me-3" data-aos="fade-in">
+                    <h2 style="line-height: 200px; font-weight: bold;">Finance</h2>
+                </div>
+                <div id="tech" class="col me-3" data-aos="fade-in">
+                    <h2 style="line-height: 200px; font-weight: bold;">Tech</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div id="freight" class="col mt-3 me-3" data-aos="fade-in">
+                    <h2 style="line-height: 200px; font-weight: bold;">Freight</h2>
+                </div>
+                <div id="food" class="col mt-3 me-3" data-aos="fade-in">
+                    <h2 style="line-height: 200px; font-weight: bold;">Food</h2>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer id="footer">
+        <p style="color:white; text-align:center;">Have an idea? <strong>Let's Chat!</strong> <br /> &copy Paperback
+            Development, LLC 2023</p>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"

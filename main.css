@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px
@@ -76,7 +80,7 @@ a {
 .jordan {
     margin-top: -78px;
     margin-left: 15px;
-    height: 600px
+    height: 580px
 }
 
 .heading {
@@ -98,6 +102,15 @@ a {
     margin-top: 25px;
 }
 
+#about {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 25px;
+}
+
 #testimonials {
     background-color: #f7f7f7;
     height: 200px
@@ -105,6 +118,7 @@ a {
 
 #serviceList {
     width: 40%;
+    margin-bottom: 200px;
 }
 
 #highlight {
@@ -115,12 +129,107 @@ a {
     margin-bottom: 15px;
     width: 90%;
     margin-left: 20px;
+    opacity: 0.3;
+}
+
+#highlight2 {
+    background-color: #7093A7;
+    height: 18px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 77%;
+    padding-left: 30px;
+    margin: auto;
+    margin-top: -63px;
+    opacity: 0.3;
 }
 
 #serviceListItems {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#industries {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding-bottom: 20px
+}
+
+#imgcontainer {
+    padding-top: 20px;
+    width: 80%;
+
+}
+
+#education {
+    background-image: url('./education.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+#finance {
+    background-image: url('./finance.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+#food {
+    background-image: url('./food3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+#freight {
+    background-image: url('./freight2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+#tech {
+    background-image: url('./tech.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+#footer {
+    background-color: #7093A7;
+    padding-bottom: 10px
 }
 
 
