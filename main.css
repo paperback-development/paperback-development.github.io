@@ -118,8 +118,14 @@ a {
 
 #serviceList {
     width: 40%;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
 }
+
+#contentWrapper {
+    width: 40%;
+    /* margin-bottom: 200px;    */
+}
+
 
 #highlight {
     background-color: #7093A7;
@@ -242,6 +248,15 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    #serviceList {
+        width: 90%;
+    }
+
+    #contentWrapper {
+        width: 90%;
+        /* margin-bottom: 200px;    */
     }
 
     .main {
