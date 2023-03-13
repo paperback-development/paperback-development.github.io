@@ -28,6 +28,11 @@ a {
     color: white;
 }
 
+#submitBtnMain {
+    background-color: #292929;
+    color: white;
+}
+
 #closeBtn {
     background-color: #292929;
     color: white;
@@ -48,6 +53,20 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around
+}
+
+#contactForm {
+    width: 40%;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+#formActions {
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .main {
@@ -156,9 +175,14 @@ a {
     justify-content: center;
 }
 
-#industries {
+#industryWrapper {
     background-color: #f7f7f7;
-    width: 100%;
+
+}
+
+#industries {
+    width: 90%;
+    margin: auto;
     padding-bottom: 20px
 }
 
@@ -254,9 +278,29 @@ a {
         width: 90%;
     }
 
-    #contentWrapper {
+    #industries {
         width: 90%;
+        margin: auto;
+        padding-bottom: 20px
+    }
+
+    #contentWrapper {
+        width: 100%;
         /* margin-bottom: 200px;    */
+    }
+
+    #contactForm {
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+
+    }
+
+    #formActions {
+        width: 100%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .main {
@@ -334,6 +378,19 @@ a {
         margin-left: 20px;
     }
 
+    #education {
+        background-image: url('./education.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 260px;
+        color: white;
+        border-radius: 6px;
+        text-align: center;
+        margin-bottom: 15px
+    }
+
 }
 
 /* Add any styles for medium-sized screens here */
@@ -347,7 +404,7 @@ a {
     }
 
     .airplaneIcon {
-        height: 200px
+        height: 200px;
     }
 }
 
