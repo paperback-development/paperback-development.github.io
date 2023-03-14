@@ -15,6 +15,26 @@ a {
     font-family: 'Quicksand'
 }
 
+#carouselRev {
+    background-color: #f7f7f7;
+    height: 250px;
+}
+
+#bottomWrapper {
+    width: 80%;
+    margin: auto
+}
+
+.caro {
+    width: 80%;
+    margin: auto;
+}
+
+.rev1 {
+    margin-top: 25px;
+    font-family: 'Quicksand';
+}
+
 .break {
     display: block;
 }
@@ -56,7 +76,7 @@ a {
 }
 
 #contactForm {
-    width: 40%;
+    width: 80%;
     margin: auto;
     margin-top: 25px;
 
@@ -119,6 +139,17 @@ a {
     justify-content: space-around;
     margin: auto;
     margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#contactCarousel {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #about {
@@ -264,6 +295,11 @@ a {
 
 
 @media only screen and (max-width: 767px) {
+    .caro {
+        width: 100%;
+        margin: auto;
+    }
+
     #serviceImage {
         display: none;
     }
@@ -290,7 +326,7 @@ a {
     }
 
     #contactForm {
-        width: 90%;
+        width: 100%;
         margin: auto;
         margin-top: 25px;
 
@@ -384,7 +420,6 @@ a {
         background-size: cover;
         background-repeat: no-repeat;
         height: 200px;
-        width: 260px;
         color: white;
         border-radius: 6px;
         text-align: center;

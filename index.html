@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paperback Development</title>
-    <link rel="icon" type="image/x-icon" href="./Screenshot 2023-02-19 at 7.11.49 PM.png">
+    <link rel="icon" type="image/x-icon" href="./assets/Screenshot 2023-02-19 at 7.11.49 PM.png">
 
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/87578baf13.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script defer src="./main.js"></script>
 
 
 </head>
@@ -98,8 +105,7 @@
                                     <div class="badge rounded-pill m"
                                         style="background-color:#7093A7; padding: 10px;margin-top: 4px; cursor:pointer"
                                         href="#" tabindex="-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                                        <strong>Contact
-                                            Us</strong>
+                                        Contact Us
                                     </div>
                                 </li>
                             </ul>
@@ -112,6 +118,7 @@
             </div>
         </div>
     </div>
+
     <div id="about">
 
         <div id="contentWrapper">
@@ -172,22 +179,21 @@
             <div id="highlight2"></div>
             <div id="imgcontainer" class="container">
                 <div class="row">
-                    <div id="education" class="col me-3" data-aos="fade-in">
+                    <div id="education" class="col-md me-3" data-aos="fade-in">
                         <h2 style="line-height: 200px; font-weight: bolder;">Education</h2>
                     </div>
-                    <div id="finance" class="col me-3" data-aos="fade-in">
+                    <div id="finance" class="col-md me-3 mb-3" data-aos="fade-in">
                         <h2 style="line-height: 200px; font-weight: bold;">Finance</h2>
                     </div>
-                    <div id="tech" class="col me-3" data-aos="fade-in">
+                    <div id="tech" class="col-md me-3" data-aos="fade-in">
                         <h2 style="line-height: 200px; font-weight: bold;">Tech</h2>
                     </div>
-
                 </div>
                 <div class="row">
-                    <div id="freight" class="col mt-3 me-3" data-aos="fade-in">
+                    <div id="freight" class="col-md mt-3 me-3" data-aos="fade-in">
                         <h2 style="line-height: 200px; font-weight: bold;">Freight</h2>
                     </div>
-                    <div id="food" class="col mt-3 me-3" data-aos="fade-in">
+                    <div id="food" class="col-md mt-3 me-3" data-aos="fade-in">
                         <h2 style="line-height: 200px; font-weight: bold;">Food</h2>
                     </div>
                 </div>
@@ -195,42 +201,86 @@
         </div>
 
     </div>
-    <div id="contactForm">
-        <h1 class="mb-5 text-center" style="font-size:30px;"><strong>Let's</strong> <span
-                id="dev"><strong>Chat</strong></span></h1>
-        <div style="background-color:#DEDFE5; height:20px; margin-top:-63px;border-radius: 5px;margin-bottom:15px">
+    <div id="bottomWrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md">
+                    <div id="carouselExampleInterval" class="carousel slide caro" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <p class="rev1">
+                                    "Working with Jordan was an a amazing experience! He was great at meeting deadlines
+                                    and
+                                    was always available to communicate when I needed him. After our first few meetings
+                                    he
+                                    fully
+                                    understood the vision for the software we were needing built. Ultimately, the
+                                    software
+                                    he
+                                    built landed
+                                    us a multi-million dollar customer! I would recommend him to anyone
+                                    needing a software developer."
+                                </p>
+                                <span class="small"><strong>Haden Anderson</strong></span><br />
+                                <span class="small">CFO, C3 Rentals</span>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <p class="rev1">
+                                    "Paperback Development's training on Javascript, HTML, and CSS is impressive and
+                                    unique.
+                                    With
+                                    experienced instructors, their well-structured curriculum provides practical
+                                    application
+                                    of
+                                    coding concepts and ample opportunities for hands-on learning and practice.
+                                    Their training has given me confidence in my coding skills, and I highly recommend
+                                    Paperback
+                                    Development for anyone seeking a solid foundation in web development."
+                                </p>
+                                <span class="small"><strong>Jelani Poole</strong></span><br />
+                                <span class="small">Student, Paperback Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div id="contactForm">
+                        <h1 class="mb-5 text-center" style="font-size:30px;"><strong>Let's</strong> <span
+                                id="dev"><strong>Chat</strong></span></h1>
+                        <div
+                            style="background-color:#DEDFE5; height:20px; margin-top:-63px;border-radius: 5px;margin-bottom:15px">
+                        </div>
+                        <form id="mainForm" action="https://formspree.io/f/mrgvkrly" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label required" style="font-family: Quicksand;">Name</label>
+                                <input type="text" name="name" class="form-control" id="clientName2">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label required" style="font-family: Quicksand;">Email</label>
+                                <input type="email" name="email" class="form-control" id="clientEmail2">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label required" style="font-family: Quicksand;">Message</label>
+                                <textarea class="form-control" name="message" id="clientMessage2"></textarea>
+                            </div>
+                            <div id="formActions" class="d-grid gap-2">
+                                <button type="btn" class="btn" id="submitBtnMain">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <form id="mainForm" action="https://formspree.io/f/mrgvkrly" method="POST">
-            <div class="mb-3">
-                <label class="form-label required" style="font-family: Quicksand;">Name</label>
-                <input type="text" name="name" class="form-control" id="clientName2">
-            </div>
-            <div class="mb-3">
-                <label class="form-label required" style="font-family: Quicksand;">Email</label>
-                <input type="email" name="email" class="form-control" id="clientEmail2">
-            </div>
-            <div class="mb-3">
-                <label class="form-label required" style="font-family: Quicksand;">Message</label>
-                <textarea class="form-control" name="message" id="clientMessage2"></textarea>
-            </div>
-            <div id="formActions" class="d-grid gap-2">
-                <button type="btn" class="btn" id="submitBtnMain">Submit</button>
-            </div>
-        </form>
     </div>
 
     <footer id="footer">
-        <p style="color:white; text-align:center;">Have an idea? <strong>Let's Chat!</strong> <br /> &copy Paperback
+        <p style="color:white; text-align:center;">Have an idea? Let's Chat! <br /> &copy Paperback
             Development, LLC 2023</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script defer src="./main.js"></script>
+
 </body>
 
 </html>

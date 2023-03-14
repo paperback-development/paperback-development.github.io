@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName('form')) {
+            form.reset();
+        }
+    }
     $("#clientName2").val("")
     $("#clientEmail2").val("")
     $("#clientMessage2").val("")
