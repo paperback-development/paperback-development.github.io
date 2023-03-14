@@ -193,7 +193,7 @@ a {
 }
 
 #education {
-    background-image: url('./education.jpg');
+    background-image: url('./assets/education.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ a {
 }
 
 #finance {
-    background-image: url('./finance.jpg');
+    background-image: url('./assets/finance.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ a {
 }
 
 #food {
-    background-image: url('./food3.jpg');
+    background-image: url('./assets/food3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,7 +232,7 @@ a {
 }
 
 #freight {
-    background-image: url('./freight2.jpg');
+    background-image: url('./assets/freight2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,7 +245,7 @@ a {
 }
 
 #tech {
-    background-image: url('./tech.jpg');
+    background-image: url('./assets/tech.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ a {
     }
 
     #education {
-        background-image: url('./education.jpg');
+        background-image: url('./assets/education.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
